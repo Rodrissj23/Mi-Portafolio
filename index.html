@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Rodrigo Altamura</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Perfil -->
+  <header>
+    <div class="perfil">
+      <img src="assets/images/tu-foto.jpg" alt="Mi Foto de Perfil" />
+      <h1>Rodrigo Altamura</h1>
+      <p class="subtitulo">Desarrollador Web Jr | Analista Jr</p>
+    </div>
+
+    <!-- Info de contacto -->
+    <div class="info-contacto">
+      <p><i class="fas fa-envelope"></i> rodrigoaltamura23@gmail.com</p>
+      <p><i class="fab fa-whatsapp"></i> 11 5860-9668</p>
+      <p><i class="fas fa-map-marker-alt"></i> Argentina, Buenos Aires</p>
+      <p><i class="fas fa-birthday-cake"></i> 09/06/2005</p>
+      <p><i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/tu-usuario" target="_blank">
+          linkedin.com/in/tu-usuario
+        </a>
+      </p>
+    </div>
+
+    <!-- Habilidades -->
+    <div class="habilidades">
+      <h3>Habilidades Técnicas</h3>
+      <ul class="tags">
+        <li>HTML y CSS - Intermedio</li>
+        <li>Excel - Intermedio</li>
+        <li>Power Bi - Intermedio</li>
+        <li>SQlite - Intermedio</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Proyectos -->
+  <section class="proyectos">
+    <h2>Proyectos</h2>
+
+    <div class="proyecto">
+      <div class="contenido-proyecto">
+        <div class="texto">
+          <h3>Nombre del Proyecto 1</h3>
+          <p>Descripción breve del proyecto. Por ejemplo: animación hecha en Blender para presentación de marca personal.</p>
+          <a href="assets/archivos/proyecto1.zip" download>Descargar proyecto</a>
+        </div>
+        <div class="imagen">
+          <img src="assets/images/imagen1.jpg" alt="Imagen del proyecto 1" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Copiá más bloques de .proyecto para más trabajos -->
+  </section>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/541158609668" class="btn-whatsapp" target="_blank" title="¡Escribime por WhatsApp!">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Flecha volver arriba -->
+  <a href="#" class="btn-top" title="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- Script -->
+  <script>
+    // Mostrar botón "volver arriba"
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        document.body.classList.add('scrolled');
+      } else {
+        document.body.classList.remove('scrolled');
+      }
+    });
+
+    // Scroll suave
+    document.querySelector('.btn-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+</html>
